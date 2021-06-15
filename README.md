@@ -20,3 +20,4 @@ Ada dua cara installasi Codeigniter, yaitu cara ```manual``` dan menggunakan ```
     Extrak file zip Codeigniter ke direktori htdocs/lab11_php_ci.
     Ubah nama direktory framework-4.x.xx menjadi ci4.
     Buka browser dengan alamat http://localhost/lab11_php_ci/ci4/public/
+    
