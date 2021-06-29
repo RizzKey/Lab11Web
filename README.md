@@ -40,4 +40,28 @@ Codeigniter 4 menyediakan fitur debugging untuk memudahkan developer untuk menge
 Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis errornya, maka perlu mengaktifkan mode debugging dengan mengubah nilai konfigurasi pada environment variable CI_ENVIRONMENT menjadi development. Kemudian mengubah nama file env menjadi .env lalu setelah itu buka file tersebut dan ubah nilai variable CI_ENVORNMENT menjadi development. Setelah mengubah nilai konfigurasi pada environment variable CI_ENVIRONMENT menjadi development. maka hapus tanda tagar (#) pada awal baris CI_ENVIRONMENT. Dan yang terakhir, ubah kode pada file app/Controller/Home.php kemudian hilangkan titik koma (;) pada akhir kode seperti berikut.
 ![SSSS](https://user-images.githubusercontent.com/56240954/123744677-4ad66700-d8d9-11eb-95fb-973c48a897b1.png)
 Maka hasilnya akan terjadi error seperti berikut.
+![SS LANGKAH 4 (Tambahan 2)](https://user-images.githubusercontent.com/56240954/123745156-0dbea480-d8da-11eb-996b-182d8bcfbd6d.png)
 
+# Langkah 5
+# Membuat Route Baru.
+
+Menambahkan kode di dalam Routes.php seperti berikut. 
+![SS LANGKAH 5](https://user-images.githubusercontent.com/56240954/123745665-cdabf180-d8da-11eb-9c48-2006266a8e2f.png)
+
+Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan perintah berikut.
+![SS LANGKAH 5 (TAMBAHAN)](https://user-images.githubusercontent.com/56240954/123746240-925df280-d8db-11eb-9fdd-64966fee644b.png)
+
+Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about seperti berikut. Maka hasilnya akan terjadi error, yang artinya file/page tersebut tidak ada. Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu Contoller yang sesuai dengan routing yang dibuat yaitu Contoller Page.
+![SS LANGKAH 5 (Tambahan 2)](https://user-images.githubusercontent.com/56240954/123746519-f385c600-d8db-11eb-95ec-23a38c7591b6.png)
+
+# Langkah 6
+# Membuat Controller
+
+Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php pada direktori Controller kemudian isi kodenya seperti berikut
+![SS LANGKAH 6](https://user-images.githubusercontent.com/56240954/123747015-8f173680-d8dc-11eb-9f70-d22f4c5955ea.png)
+
+# Langkah 7
+# Auto Routing
+
+Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai true menjadi false. Kemudian tambahkan method baru pada Controller Page seperti berikut. Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan alamat: http://localhost:8080/page/tos
+![SS LANGKAH 7](https://user-images.githubusercontent.com/56240954/123747277-eb7a5600-d8dc-11eb-8154-e606c8b674b9.png)
