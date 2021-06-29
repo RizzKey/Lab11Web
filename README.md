@@ -65,3 +65,17 @@ Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php 
 
 Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai true menjadi false. Kemudian tambahkan method baru pada Controller Page seperti berikut. Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan alamat: http://localhost:8080/page/tos
 ![SS LANGKAH 7](https://user-images.githubusercontent.com/56240954/123747277-eb7a5600-d8dc-11eb-8154-e606c8b674b9.png)
+
+# Langkah 8
+# Membuat View
+
+Selanjutnya adalah membuat view untuk tampilan web agar lebih menarik. Buat file baru dengan nama about.php pada direktori view (app/view/about.php) kemudian isi kodenya seperti berikut. Kemudian ubah method about pada class Controller Page menjadi seperti berikut.
+![SS LANGKAH 8](https://user-images.githubusercontent.com/56240954/123753883-8296dc00-d8e4-11eb-80e6-39ce84d9b338.png)
+Maka hasilnya akan seperti berikut.
+![SS LANGKAH 8 (TAMBAHAN)](https://user-images.githubusercontent.com/56240954/123754279-ea4d2700-d8e4-11eb-93f2-d9f09be90a2f.png)
+
+# Langkah 9
+# Membuat Layout Web dengan CSS
+
+Pada dasarnya layout web dengan css dapat diimplementasikan dengan mudah pada Codeigniter. Yang perlu diketahui adalah pada Codeigniter 4 file yang menyimpan asset css dan javascript terletak pada direktori public. Buat file css pada direktori public dengan nama style.css seperti berikut.
+
