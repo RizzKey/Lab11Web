@@ -155,9 +155,15 @@ Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada Controll
 ![SS LANGKAH 9](https://user-images.githubusercontent.com/56240954/123767431-a7458080-d8f1-11eb-906c-8c46da57dc93.png)
 Selanjutnya buat view untuk tampilan admin dengan nama admin_index.php seperti berikut. 
 ![SS LANGKAH 9 (TAMBAHAN 2)](https://user-images.githubusercontent.com/56240954/123768017-276be600-d8f2-11eb-9bab-0bc1f390a7d5.png)
-![SS LANGKAH 9 (TAMBAHAN 3)](https://user-images.githubusercontent.com/56240954/123768769-d4466300-d8f2-11eb-8ecb-4164ea970186.png)
 Setelah itu tambahkan routing untuk menu admin seperti berikut. 
-
+![SS LANGKAH 9 (TAMBAHAN 3)](https://user-images.githubusercontent.com/56240954/123768769-d4466300-d8f2-11eb-8ecb-4164ea970186.png)
+Setelah itu buat template header dan footer baru untuk Halaman Admin. Kemudian buat file baru dengan nama admin_header.php pada direktori app/view/template seperti berikut. 
+![TAMBAHAN 1](https://user-images.githubusercontent.com/56240954/123769861-ed034880-d8f3-11eb-95d4-6890d081845c.png)
+Lalu buat file baru lagi dengan nama admin_footer.php pada direktori app/view/template seperti berikut. 
+![TAMBAHAN 2](https://user-images.githubusercontent.com/56240954/123770106-30f64d80-d8f4-11eb-964f-02685d3615c5.png)
+Dan yang terakhir buat file baru lagi dengan nama admin.css pada direktori ci4/public untuk memperindah tampilan Halaman Admin seperti berikut
+![TAMBAHAN 3](https://user-images.githubusercontent.com/56240954/123770422-7adf3380-d8f4-11eb-9c0b-24e59cd19747.png)
+![TAMBAHAN 4](https://user-images.githubusercontent.com/56240954/123770692-ad892c00-d8f4-11eb-920a-f3640856a5ba.png)
 
 
 
