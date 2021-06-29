@@ -90,5 +90,75 @@ Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga
 ![SS 2](https://user-images.githubusercontent.com/56240954/123756665-5af54300-d8e7-11eb-8f2e-7a3ab4b36b03.png)
 ![SS JAWABAN 2](https://user-images.githubusercontent.com/56240954/123757228-f4245980-d8e7-11eb-8417-ef35ec2d1685.png)
 
+# Praktikum 12: Framework Lanjutan (CRUD) - Pemrograman Web
+## Langkah-langkah Praktikum
+## Persiapan
+Untuk memulai membuat aplikasi CRUD sederhana, yang perlu disiapkan adalah database server menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP seperti berikut. SS XAMPP
+![SS XAMPP](https://user-images.githubusercontent.com/56240954/123760069-b4ab3c80-d8ea-11eb-8804-a6a4af88e0c1.png)
+
+# Langkah 1
+
+ Membuat database kemudian membuat Tabel dan masukkan kode pada database query seperti berikut.
+![SS LANGKAH 1](https://user-images.githubusercontent.com/56240954/123760905-7bbf9780-d8eb-11eb-8744-dc5098525c7e.png)
+
+# Langkah 2
+Konfigurasi koneksi database
+
+Selanjutnya membuat konfigurasi untuk menghubungkan dengan database server. Kemudian melakukan konfigurasi dengan cara mengubah beberapa kode pada file htdocs\lab11_php_ci\ci4\.env. Lalu cari pada line DATABASE dan hilangkan tanda pagar (#) didepan seperti berikut ini. 
+![SS LANGKAH 2](https://user-images.githubusercontent.com/56240954/123761275-da851100-d8eb-11eb-81c3-c3b4448a86a5.png)
+
+# Langkah 3
+Membuat Model
+
+Selanjutnya adalah membuat Model untuk memproses data Artikel. Buat file baru pada direktori app/Models dengan nama ArtikelModel.php lalu masukkan kode seperti berikut
+![SS LANGKAH 3](https://user-images.githubusercontent.com/56240954/123761837-65fea200-d8ec-11eb-9a22-d87fac112387.png)
+
+# Langkah 4
+Membuat Controller
+
+Buat Controller baru dengan nama Artikel.php pada direktori app/Controllers lalu masukkan kode seperti berikut. SS LANGKAH 4
+![SS LANGKAH 4](https://user-images.githubusercontent.com/56240954/123762251-d3123780-d8ec-11eb-97ba-3002dfe78bfa.png)
+
+# Langkah 5
+Membuat View
+
+Buat folder baru dengan nama artikel pada direktori app/views, kemudian buat file baru dengan nama index.php seperti berikut.
+![SS LANGKAH 5](https://user-images.githubusercontent.com/56240954/123762680-3c924600-d8ed-11eb-93fd-5346b4117f2d.png)
+Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel maka hasilnya akan seperti berikut. 
+![SS LANGKAH 5 (TAMBAHAN)](https://user-images.githubusercontent.com/56240954/123763223-c3dfb980-d8ed-11eb-8127-2d158bbf8bcd.png)
+Terlihat belum ada data yang diampilkan. Kemudian coba tambahkan beberapa data pada database query agar dapat ditampilkan datanya seperti berikut.![SS LANGKAH 5 (TAMBAHAN 2)](https://user-images.githubusercontent.com/56240954/123764323-e0302600-d8ee-11eb-9bb4-47819fbeb2cf.png)
+Lalu refresh kembali browser, sehingga akan ditampilkan hasilnya seperti berikut
+![SS LANGKAH 5 (TAMBAHAN 3)](https://user-images.githubusercontent.com/56240954/123764872-65b3d600-d8ef-11eb-9b9e-5e2281005897.png)
+
+# Langkah 6
+Membuat Tampilan Detail Artikel
+
+Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. Tambahkan fungsi baru pada Controller Artikel dengan nama view() seperti berikut.
+![SS LANGKAH 6](https://user-images.githubusercontent.com/56240954/123765634-1e7a1500-d8f0-11eb-97b2-f1ffb8fc334a.png)
+
+# Langkah 7
+Membuat View Detail
+
+Buat view baru untuk halaman detail dengan nama app/views/artikel/detail.php seperti berikut. SS LANGKAH 7
+![SS LANGKAH 7](https://user-images.githubusercontent.com/56240954/123766074-8c264100-d8f0-11eb-8dd7-c058e90753ff.png)
+
+# Langkah 8
+Membuat Routing untuk artikel detail
+
+Buka kembali file app/config/Routes.php, kemudian tambahkan routing untuk artikel detail maka hasilnya akan seperti berikut. SS LANGKAH 8
+![SS LANGKAH 8](https://user-images.githubusercontent.com/56240954/123766881-4322bc80-d8f1-11eb-8fb1-b55e38bde35c.png)
+
+# Langkah 9
+Membuat Menu Admin
+
+Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada Controller Artikel dengan nama admin_index() seperti berikut. 
+![SS LANGKAH 9](https://user-images.githubusercontent.com/56240954/123767431-a7458080-d8f1-11eb-906c-8c46da57dc93.png)
+Selanjutnya buat view untuk tampilan admin dengan nama admin_index.php seperti berikut. 
+![SS LANGKAH 9 (TAMBAHAN 2)](https://user-images.githubusercontent.com/56240954/123768017-276be600-d8f2-11eb-9bab-0bc1f390a7d5.png)
+![SS LANGKAH 9 (TAMBAHAN 3)](https://user-images.githubusercontent.com/56240954/123768769-d4466300-d8f2-11eb-8ecb-4164ea970186.png)
+Setelah itu tambahkan routing untuk menu admin seperti berikut. 
+
+
+
 
 
