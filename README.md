@@ -76,6 +76,9 @@ Maka hasilnya akan seperti berikut.
 
 # Langkah 9
 # Membuat Layout Web dengan CSS
-
 Pada dasarnya layout web dengan css dapat diimplementasikan dengan mudah pada Codeigniter. Yang perlu diketahui adalah pada Codeigniter 4 file yang menyimpan asset css dan javascript terletak pada direktori public. Buat file css pada direktori public dengan nama style.css seperti berikut.
+![SS LANGKAH 9](https://user-images.githubusercontent.com/56240954/123755096-c3432500-d8e5-11eb-8b34-fceb20f4b5fd.png)
+
+#
+
 
