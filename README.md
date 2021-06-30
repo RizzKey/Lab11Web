@@ -165,6 +165,60 @@ Dan yang terakhir buat file baru lagi dengan nama admin.css pada direktori ci4/p
 ![TAMBAHAN 3](https://user-images.githubusercontent.com/56240954/123770422-7adf3380-d8f4-11eb-9c0b-24e59cd19747.png)
 ![TAMBAHAN 4](https://user-images.githubusercontent.com/56240954/123770692-ad892c00-d8f4-11eb-920a-f3640856a5ba.png)
 
+Kemudian akses menu admin dengan url http://localhost:8080/admin/artikel seperti berikut.
+![Langkah 9](https://user-images.githubusercontent.com/56240954/123911873-855a0580-d9a6-11eb-858c-ad569c584083.png)
+
+# Langkah 10
+Menambah Data Artikel
+
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama add() seperti berikut. 
+![Langkah 10](https://user-images.githubusercontent.com/56240954/123914773-f5b65600-d9a9-11eb-82ba-dbd7824ef956.png)
+Kemudian buat view untuk form tambah dengan nama form_add.php seperti berikut.
+![Langkah 10 A](https://user-images.githubusercontent.com/56240954/123915177-6b222680-d9aa-11eb-8e3e-bba60b20c909.png)
+Setelah itu, lalu klik Tambah Artikel pada menu Halaman Admin Maka hasilnya akan seperti berikut.
+![Langkah 10 b](https://user-images.githubusercontent.com/56240954/123915248-7f662380-d9aa-11eb-8639-d1ac8ddfb791.png)
+
+# Langkah 11
+Mengubah Data
+
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit() seperti berikut. 
+![Langkah 11](https://user-images.githubusercontent.com/56240954/123915287-8a20b880-d9aa-11eb-8c56-ef7c59601583.png)
+Kemudian buat view untuk form tambah dengan nama form_edit.php
+![Langkah 11 A](https://user-images.githubusercontent.com/56240954/123915397-a91f4a80-d9aa-11eb-8760-8d119425993c.png)
+Setelah itu, lalu klik Ubah pada salah satu judul artikel, maka hasilnya akan seperti berikut. 
+![Langkah 11 B](https://user-images.githubusercontent.com/56240954/123915535-cfdd8100-d9aa-11eb-870b-28dc5246ec80.png)
+
+# Langkah 12
+Menghapus Data
+
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete() seperti berikut.
+![Langkah12](https://user-images.githubusercontent.com/56240954/123915809-1af79400-d9ab-11eb-9715-d34258f9d26e.png)
+
+
+# Praktikum 13: Framework Lanjutan (Modul Login)
+## Langkah-langkah Praktikum
+## Persiapan
+
+Untuk memulai membuat modul Login, yang perlu dipersiapkan adalah database server menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP seperti berikut. 
+![ss xamp](https://user-images.githubusercontent.com/56240954/123917663-3cf21600-d9ad-11eb-98a5-38852deb7a66.png)
+
+# Langkah 1
+Membuat Tabel User
+
+Membuat tabel user pada database ```lab_ci4``` seperti berikut. 
+![SS 1](https://user-images.githubusercontent.com/56240954/123917729-51cea980-d9ad-11eb-9491-eb0a04df1f80.png)
+
+# Langkah 2
+Membuat Model User
+
+Selanjutnya adalah membuat Model untuk memproses data Login. Buat file baru pada direktori app/Models dengan nama UserModel.php dan masukkan kode seperti berikut. 
+![Langkah2](https://user-images.githubusercontent.com/56240954/123917787-60b55c00-d9ad-11eb-812e-4501551913e5.png)
+
+
+
+
+
+
 
 
 
