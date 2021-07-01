@@ -203,22 +203,29 @@ Untuk memulai membuat modul Login, yang perlu dipersiapkan adalah database serve
 ![ss xamp](https://user-images.githubusercontent.com/56240954/123917663-3cf21600-d9ad-11eb-98a5-38852deb7a66.png)
 
 # Langkah 1
-Membuat Tabel User
+## Membuat Tabel User
 
 Membuat tabel user pada database ```lab_ci4``` seperti berikut. 
 ![SS 1](https://user-images.githubusercontent.com/56240954/123917729-51cea980-d9ad-11eb-9491-eb0a04df1f80.png)
 
 # Langkah 2
-Membuat Model User
+## Membuat Model User
 
 Selanjutnya adalah membuat Model untuk memproses data Login. Buat file baru pada direktori app/Models dengan nama UserModel.php dan masukkan kode seperti berikut. 
 ![Langkah2](https://user-images.githubusercontent.com/56240954/123917787-60b55c00-d9ad-11eb-812e-4501551913e5.png)
 
+# Langkah 3
+## Membuat Controller User
 
+Buat Controller baru dengan nama User.php pada direktori app/Controllers. Kemudian tambahkan method index() untuk menampilkan daftar user, dan method login() untuk proses login dan masukkan kode seperti berikut. SS LANGKAH 3
+![Langkah 3](https://user-images.githubusercontent.com/56240954/124060118-8ba7ba80-da56-11eb-94fe-e2485d55ef87.png)
+![Langkah 3 A](https://user-images.githubusercontent.com/56240954/124060318-feb13100-da56-11eb-9029-9a555bc1a2af.png)
 
+# Langkah 4
+## Membuat View Login
 
-
-
+Buat folder baru dengan nama user pada direktori app/views, kemudian buat file baru dengan nama login.php dan masukkan kode seperti berikut. 
+![Langkah 4](https://user-images.githubusercontent.com/56240954/124060379-21434a00-da57-11eb-98e4-39b6ed5ca37a.png)
 
 
 
