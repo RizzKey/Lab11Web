@@ -227,5 +227,45 @@ Buat Controller baru dengan nama User.php pada direktori app/Controllers. Kemudi
 Buat folder baru dengan nama user pada direktori app/views, kemudian buat file baru dengan nama login.php dan masukkan kode seperti berikut. 
 ![Langkah 4](https://user-images.githubusercontent.com/56240954/124060379-21434a00-da57-11eb-98e4-39b6ed5ca37a.png)
 
+# Langkah 5
+Membuat Database Seeder
+
+Database seeder digunakan untuk membuat data dummy. Untuk keperluan ujicoba modul login, kita perlu memasukkan data user dan password kedalam database. Untuk itu buat database seeder untuk tabel user. Buka CLI, kemudian ketik perintah berikut:
+![Langkah 5](https://user-images.githubusercontent.com/56240954/124069479-75095f80-da66-11eb-9696-a731ba4e6719.png)
+Selanjutnya, buka file UserSeeder.php yang berada di lokasi direktori /app/Database/Seeds/UserSeeder.php kemudian isi dengan kode berikut: 
+![langkah 5 A](https://user-images.githubusercontent.com/56240954/124069538-8b172000-da66-11eb-9ffc-5c46a2821120.png)
+Selanjutnya buka kembali CLI dan ketik perintah berikut: 
+![Langkah 5 B](https://user-images.githubusercontent.com/56240954/124069625-ab46df00-da66-11eb-9dfe-a64696d8644f.png)
+Namun sebelum mengakses urlnya, pastikan untuk menjalankan perintah php spark serve terlebih dahulu untuk menjalankan program ci4 di port 8080 dengan cara membuka CLI kemudian ketik perintah berikut: SS LANGKAH 5
+![Langkah 5 C](https://user-images.githubusercontent.com/56240954/124069715-d5000600-da66-11eb-8af7-e23e84d7efac.png)
+
+# Langkah 6
+## Menambahkan Auth Filter
+
+Selanjutnya membuat filter untuk halaman admin. Buat file baru dengan nama Auth.php pada direktori app/Filters dan masukkan kode seperti berikut. 
+![Langkah 6](https://user-images.githubusercontent.com/56240954/124069787-f52fc500-da66-11eb-9127-f05e4638ed1c.png)
+Selanjutnya buka file app/Config/Routes.php dan sesuaikan kodenya seperti berikut.
+![Langkah 6 A](https://user-images.githubusercontent.com/56240954/124069899-2f996200-da67-11eb-86e5-13901a914416.png)
+Selanjutnya buka file app/Config/Routes.php dan sesuaikan kodenya seperti berikut
+![Langkah 6 B](https://user-images.githubusercontent.com/56240954/124069969-4d66c700-da67-11eb-833c-b172968f1e7e.png)
+
+# Langkah 7
+## Fungsi Logout
+
+Tambahkan method logout pada Controller User dan masukkan kode seperti berikut: SS LANGKAH 7
+![Langkah 7](https://user-images.githubusercontent.com/56240954/124071063-0548a400-da69-11eb-8015-812e68411bfe.png)
+
+# Langkah 8
+## Tombol Logout
+
+Menambahkan tombol Logout pada menu header admin dengan cara ke direktori app\view\template lalu buka file admin_header.php dan masukkan kode seperti berikut. 
+![Langkah 8](https://user-images.githubusercontent.com/56240954/124071255-450f8b80-da69-11eb-8098-e151148c1c80.png)
+Selanjutnya, tambahkan route logout dengan cara ke direktori app\Config\Routes.php dan masukkan kode seperti berikut.
+![Langkah 8 A](https://user-images.githubusercontent.com/56240954/124071354-64a6b400-da69-11eb-9984-d62394efbf7a.png)
+Berikut adalah halaman utama (menu admin) yang sudah ditambahkan tombol Logout untuk keluar dari menu ini dan kembali ke menu Login. 
+![Langkah 8 B](https://user-images.githubusercontent.com/56240954/124071475-928bf880-da69-11eb-8f2a-9a2d3faa3776.png)
+
+
+
 
 
