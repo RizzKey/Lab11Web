@@ -266,6 +266,11 @@ Berikut adalah halaman utama (menu admin) yang sudah ditambahkan tombol Logout u
 ![Langkah 8 B](https://user-images.githubusercontent.com/56240954/124071475-928bf880-da69-11eb-8f2a-9a2d3faa3776.png)
 
 
+# Praktikum 14: Pagination dan Pencarian
+## Langkah-langkah Praktikum
+## Persiapan
+
+
 
 
 
